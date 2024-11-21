@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wózki widłowe test</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <div id="score-container">
+    <p>Odpowiedzi:</p>
+    <p><span id="correct-count" class="green circle">0</span> <span id="incorrect-count" class="red circle">0</span></p>
+    
+  </div>
+  
+  <h2>Wózki widłowe test</h2>
+
+  <div class="quiz-content">
+    <div class="question-box">
+      <div class="question">
+        <p><strong>1.</strong> Urządzenie techniczne objęte dozorem technicznym może być eksploatowane na podstawie
+        </p>
+        <img src="assets/image.png" alt="Opis obrazka" class="question-image">
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'B')">A: zezwolenia ustnego lub pisemnego wydanego przez upoważnionego konserwatora
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'B')">B: ważnej decyzji zezwalającej na eksploatacje wydanej przez organ właściwej jednostki dozoru technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'B')">C: oznaczenia CE zamieszczonego na urządzeniu
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'B')">D: deklaracji zgodności wystawionej przez wytwórcę
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+  
+    <div class="question-box">
+      <div class="question">
+        <p><strong>2.</strong> Które z wymienionych czynności nie należą do zakresu obowiązków obsługującego UTB
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: wykonywanie niewielkich napraw urządzenia w ramach posiadanego wykształcenia i umiejętności
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: przestrzeganie instrukcji eksploatacji w zakresie obsługi UTB
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: zapoznanie się z planem pracy i wielkością przenoszonych ładunków
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: wszystkie odpowiedzi są poprawne
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+  
+    <div class="question-box">
+      <div class="question">
+        <p><strong>3.</strong> Terminy przeglądów konserwacyjnych urządzeń technicznych
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: są zawarte w instrukcji eksploatacji urządzenia
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: określa konserwator urządzenia
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: określa w protokole inspektor wykonujący badanie
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: wszystkie odpowiedzi są poprawne
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+  
+    <div class="question-box">
+      <div class="question">
+        <p><strong>4.</strong> Dozorem technicznym nazywamy
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: określone ustawa działania zmierzające do zapewnienia bezpiecznego funkcjonowania urządzeń technicznych i urządzeń do odzyskiwania par paliwa oraz działania zmierzające do zapewnienia bezpieczeństwa publicznego w tych obszarach
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: instytucje kontrolujące stan techniczny urządzeń
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: Urząd Dozoru Technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: UDT, WDT, TDT
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>5.</strong> Dozór techniczny nad urządzeniami technicznymi wykonuje
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: Urząd Dozoru Technicznego oraz specjalistyczne jednostki dozoru technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: Urząd Dozoru Technicznego oraz upoważnione przez UDT organizacje
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: Urząd Dozoru Technicznego i zagraniczne jednostki dozoru technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: wszystkie odpowiedzi są poprawne
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>6.</strong> Zmiana parametrów technicznych lub zmiana konstrukcji urządzenia technicznego tratowana jest jako
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: modernizacja urządzenia technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: naprawa urządzenia technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: usuwanie usterek i innych nieprawidłowości urządzenia technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: wytworzenie nowego urządzenia
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>7.</strong> Uzgodniona naprawę lub modernizacje urządzeń technicznych maże wykonać
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: naprawiający lub modernizujący, który posiada uprawnienie wydane przez organ właściwej jednostki dozoru technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: eksploatujący urządzenie techniczne posiadający odpowiednie doświadczenie w zakresie napraw lub modernizacji
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: konserwator posiadający odpowiednie doświadczenie w zakresie napraw lub modernizacji
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: w niewielkim zakresie kompetentny operator
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+    
+    <div class="question-box">
+      <div class="question">
+        <p><strong>8.</strong> Ustawa o dozorze technicznym określa następujące formy dozoru technicznego
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'B')">A: całkowita, częściowa, ograniczona
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'B')">B: pełna, ograniczona, uproszczona
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'B')">C: pełna, cykliczna, sporadyczna
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'B')">D: UDT, WDT, TDT
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>9.</strong> Decyzje zezwalająca na eksploatacje urządzenia technicznego wydaje
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'D')">A: konserwator po wykonaniu przeglądu z wynikiem pozytywnym
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'D')">B: organ właściwej jednostki dozoru technicznego lub eksploatujący urządzenie techniczne z upoważnienia organu właściwej jednostki dozoru technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'D')">C: organ właściwej jednostki dozoru technicznego lub organ administracji publicznej z upoważnienia organu właściwej jednostki dozoru technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'D')">D: organ właściwej jednostki dozoru technicznego
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>10.</strong> Obsługujący urządzenie techniczne może podjąć prace gdy
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'D')">A: urządzenie posiada ważna decyzje zezwalająca na eksploatacje jeżeli wymagają tego odpowiednie przepisy
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'D')">B: posiada zaświadczenie kwalifikacyjne odpowiedniej kategorii
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'D')">C: urządzenie posiada aktualny pozytywny wynik przeglądu konserwacyjnego
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'D')">D: wszystkie powyższe warunki muszą być spełnione jednocześnie
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>11.</strong> Obsługujący urządzenie techniczne może podjąć pracę gdy
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'D')">A: urządzenie posiada aktualny wpis w dzienniku konserwacji potwierdzający sprawność urządzenia
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'D')">B: przeszedł odpowiednie szkolenie stanowiskowe
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'D')">C: urządzenie posiada ważna decyzje zezwalająca na eksploatacje
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'D')">D: wszystkie powyższe warunki muszą być spełnione jednocześnie
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>12.</strong> W przypadku nieprzestrzegania przez eksploatującego przepisów o dozorze technicznym eksploatujący
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'C')">A: otrzymuje pisemne upomnienie
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'C')">B: otrzymuje zalecenia pokontrolne
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'C')">C: podlega grzywnie lub karze ograniczenia wolności
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'C')">D: odpowiedz a i b jest prawidłowa
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>13.</strong> W przypadku stwierdzenia zagrożenia dla życia lub zdrowia ludzkiego oraz mienia i środowiska inspektor
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: wydaje decyzje wstrzymująca eksploatacje urządzenia technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: wystawia mandat karny
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: pisemnie poucza eksploatującego
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: wszystkie odpowiedzi są poprawne
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>14.</strong> W przypadku niebezpiecznego uszkodzenia urządzenia technicznego lub nieszczęśliwego wypadku eksploatujący
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: niezwłocznie powiadamia UDT o zaistniałym zdarzeniu
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: powiadamia producenta urządzenia o przyczynach powstałego zdarzenia
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: niezwłocznie dokonuje naprawy urządzenia i przekazuje do dalszej eksploatacji
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: zgłasza urządzenie do wykonania naprawy
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>15.</strong> Zaświadczenie kwalifikacyjne do obsługi może zostać cofnięte przez
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'D')">A: organ właściwej jednostki dozoru technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'D')">B: eksploatującego urządzenie techniczne
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'D')">C: inspektora bhp
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'D')">D: Państwowa Inspekcje Pracy
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>16.</strong> Urządzenia techniczne nieobjęte dozorem technicznym to
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'D')">A: żurawie o udźwigu do 3,2 t
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'D')">B: wciągniki i wciągarki oraz suwnice
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'D')">C: wózki jezdniowe podnośnikowe oraz podesty ruchome
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'D')">D: zawiesia transportowe
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>17.</strong> Urządzenia techniczne objęte dozorem technicznym to
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'D')">A: przenośniki kabinowe i krzesełkowe
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'D')">B: układnice magazynowe oraz urządzenia dla osób niepełnosprawnych
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'D')">C: wyciągi towarowe i wyciągi statków
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'D')">D: wszystkie odpowiedzi są poprawne
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>18.</strong> Niebezpieczne uszkodzenie urządzenia technicznego to
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'D')">A: każda usterka UTB
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'D')">B: nieprzewidziane uszkodzenie, w wyniku którego urządzenie nadaje się do częściowej eksploatacji
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'D')">C: nieprzewidziane uszkodzenie, w wyniku którego nadaje się do eksploatacji tylko przy obniżonych parametrach
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'D')">D: nieprzewidziane uszkodzenie, w wyniku którego urządzenie nie nadaje się do eksploatacji lub jego dalsza eksploatacja stanowi zagrożenie
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>19.</strong> Nieszczęśliwy wypadek to
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: nagłe zdarzenie, które spowodowało obrażenia ciała lub śmierć
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: nagłe zdarzenie, które spowodowało przerwę w pracy
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: nagłe zdarzenie, które skutkuje wyłączeniem urządzenia technicznego z eksploatacji
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: każda usterka UTB spowodowana przyczyna losowa
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>20.</strong> Podnoszenie i przenoszenie osób przez urządzenie techniczne przeznaczone wyłącznie do transportu ładunków wymaga
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: uzgodnienia z organem właściwej jednostki dozoru technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: uzgodnienia z przełożonym
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: uzgodnienia ze służba BHP
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: jest możliwe przy zachowaniu szczególnej ostrożności i pod nadzorem inspektora
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>21.</strong> Odpowiedzialnym za zapewnienie właściwej obsługi i konserwacji urządzenia technicznego jest
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: eksploatujący urządzenie techniczne
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: organ właściwej jednostki dozoru technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: Państwowa Inspekcja Pracy
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: inspektor UDT
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>22.</strong> Wymagane przepisami prawa przeglądy konserwacyjne wykonuje
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'D')">A: osoba posiadająca zaświadczenie kwalifikacyjne do konserwacji
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'D')">B: pracownik autoryzowanego serwisu producenta urządzenia (pod warunkiem posiadania zaświadczeń kwalifikacyjnych do konserwacji)
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'D')">C: zakładowe służby utrzymania ruchu
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'D')">D: odpowiedz a i b jest prawidłowa
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>23.</strong> Dziennik konserwacji urządzenia technicznego prowadzi
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'D')">A: inspektor UDT w księdze rewizyjnej urządzenia
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'D')">B: uprawniony operator
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'D')">C: wyznaczony pracownik eksploatującego
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'D')">D: konserwator urządzenia technicznego
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>24.</strong> Badania odbiorcze przeprowadza się dla urządzeń technicznych
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'B')">A: w terminach zgodnych z zapisami rozporządzenia w sprawie warunków technicznych dozoru technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'B')">B: przed wydaniem pierwszej decyzji zezwalającej na eksploatacje
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'B')">C: po naprawie urządzenia technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'B')">D: po każdej zmianie eksploatującego
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>25.</strong> Badania okresowe przeprowadza się dla urządzeń technicznych objętych dozorem
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'B')">A: ograniczonym
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'B')">B: pełnym</button>
+          <button onclick="checkAnswer(this, 'C', 'B')">C: uproszczonym</button>
+          <button onclick="checkAnswer(this, 'D', 'B')">D: wszystkie odpowiedzi są poprawne
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>26.</strong> Nieobecność konserwującego na badaniu urządzenia technicznego wymaga min.
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: wcześniejszego uzgodnienia tego faktu z organem właściwej jednostki dozoru technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: przedstawienia pisemnego usprawiedliwienia nieobecności konserwatora
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: przedstawienia zwolnienia lekarskiego potwierdzającego niezdolność konserwatora do pracy
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: wszystkie odpowiedzi są prawidłowe
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>27.</strong> Kandydat na obsługującego urządzenie techniczne musi
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: mieć ukończone 18 lat
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: posiadać przynajmniej wykształcenie zawodowe
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: posiadać przynajmniej 1 rok stażu pracy
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: wszystkie odpowiedzi są prawidłowe
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>28.</strong> Obsługujący urządzenie techniczne ma obowiąże przerwać prace gdy
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'D')">A: jego stan fizyczny i psychiczny w dniu pracy jest nieodpowiedni
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'D')">B: stwierdzi, ze dalsza praca urządzeniem stwarza zagrożenie
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'D')">C: urządzenie jest niesprawne
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'D')">D: wszystkie odpowiedzi są prawidłowe
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>29.</strong> Terminy przeglądów konserwacyjnych urządzenia mogą być określone
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'D')">A: w instrukcji eksploatacji urządzenia
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'D')">B: w ustawie o dozorze technicznym
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'D')">C: w rozporządzeniu określającym warunki techniczne dozoru technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'D')">D: odpowiedz a i c jest prawidłowa
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>30.</strong> Terminy badan obrusowych i doraźnych kontrolnych UTB określone są
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'B')">A: w ustawie o dozorze technicznym
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'B')">B: w rozporządzeniu określającym warunki techniczne dozoru technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'B')">C: w dokumentacji konstrukcyjnej urządzenia
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'B')">D: w dzienniku konserwacji
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>31.</strong> Obowiązkiem obsługującego urządzenie techniczne jest
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: przestrzeganie instrukcji eksploatacji w zakresie obsługi urządzenia
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: przestrzeganie instrukcji eksploatacji w zakresie konserwacji urządzenia
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: wykonywanie napraw urządzenia
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: wszystkie odpowiedzi są poprawne
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>32.</strong> Urządzenie techniczne można eksploatować na podstawie
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'C')">A: aktualnej naklejki organu właściwej jednostki dozoru technicznego określającej termin kolejnego badania
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'C')">B: aktualnego wpisu konserwatora urządzenia w dzienniku konserwacji
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'C')">C: ważnej decyzji zezwalającej na eksploatacje wydanej przez organ właściwej jednostki dozoru technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'C')">D: pozytywnego protokołu z badania okresowego lub odbiorczego
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>33.</strong> Po wykonanych czynnościach przy urządzeniu technicznym inspektor sporządza
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'B')">A: instrukcje eksploatacji urządzenia
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'B')">B: decyzje i protokół z wykonanych czynności
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'B')">C: deklaracje zgodności CE
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'B')">D: wszystkie odpowiedzi są poprawne
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>34.</strong> Naprawę i modernizacje urządzenia technicznego wykonuje
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'C')">A: operator w ramach posiadanych umiejętności
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'C')">B: konserwator</button>
+          <button onclick="checkAnswer(this, 'C', 'C')">C: zakład uprawniony
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'C')">D: eksploatujący</button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>35.</strong> Bezpośrednio odpowiedzialnym za bezpieczna eksploatację urządzenia technicznego jest
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: obsługujący urządzenie
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: producent urządzenia
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: zakładowy inspektor BHP
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: inspektor UDT
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>36.</strong> Informacje dotyczące zasad bezpiecznej obsługi urządzenia są zawarte w
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: instrukcji eksploatacji urządzenia
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: ustawie o dozorze technicznym
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: dzienniku konserwacji
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: protokole z badania wykonanego przez inspektora UDT
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>37.</strong> W ramach czynności przed rozpoczęciem pracy Obsługujący
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'D')">A: sprawdza stan techniczny urządzenia poprzez oględziny
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'D')">B: wykonuje próby statyczna i dynamiczna
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'D')">C: wykonuje próby ruchowe urządzenia
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'D')">D: odpowiedz a i c jest prawidłowa
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>38.</strong> Zaświadczenia kwalifikacyjne do obsługi urządzeń technicznych podlegających dozorowi technicznemu wydaje
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'D')">A: firma szkoleniowa po pozytywnym wyniku egzaminu sprawdzającego
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'D')">B: inspektor BHP na podstawie zaświadczenia o ukończeniu kursu
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'D')">C: pracodawca na podstawie zdanego egzaminu 
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'D')">D: organ właściwej jednostki dozoru technicznego
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>39.</strong> Przeciążanie UTB w trakcie pracy
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: jest zabronione
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: jest dopuszczalne
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: jest dopuszczalne ale tylko do 125% udźwigu nominalnego
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: jest dopuszczalne ale tylko do 110% udźwigu nominalnego
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>40.</strong> Badania doraźne eksploatacyjne wykonuje się m.in.
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'B')">A: po każdym usunięciu usterki przez konserwatora
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'B')">B: po wymianie cięgien nośnych
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'B')">C: raz na rok
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'B')">D: po wypadku na urządzeniu
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>41.</strong> Obowiązki obsługującego określone są
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: w instrukcji eksploatacji urządzenia
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: w dzienniku konserwacji
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: w ustawie o dozorze technicznym
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: wszystkie odpowiedzi są poprawne
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>42.</strong> Badania okresowe urządzenia technicznego są wykonywane przez
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'B')">A: konserwatora posiadającego odpowiednie zaświadczenie kwalifikacyjne
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'B')">B: inspektora organu właściwej jednostki dozoru technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'B')">C: pracownika serwisu producenta
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'B')">D: operatora
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>43.</strong> Jednostka dozoru technicznego jest
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'D')">A: Urząd Dozoru Technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'D')">B: Wojskowy Dozór techniczny
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'D')">C: Transportowy dozór Techniczny
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'D')">D: wszystkie odpowiedzi są prawidłowe
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>44.</strong> Zaświadczenia kwalifikacyjne uprawniające do obsługi urządzeń technicznych ważne są na terenie
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: Rzeczypospolitej Polskiej
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: Unii Europejskiej
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: nie maja określonego obszaru ważności
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: krajów strefy Schengen
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>45.</strong> Obowiązek stosowania środków ochrony indywidualnej przez operatorów urządzeń technicznych wynika z
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'D')">A: instrukcji eksploatacji producenta
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'D')">B: przepisów BHP
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'D')">C: przepisów wewnątrzzakładowych
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'D')">D: wszystkie odpowiedzi są poprawne
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>46.</strong> Zgodnie z rozporządzeniem Rady Ministrów w sprawie rodzajów urządzeń technicznych podlegających dozorowi technicznemu przepisom dozoru technicznego podlegają
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'D')">A: dźwigi, żurawie, suwnice, wciągarki i wciągniki
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'D')">B: wózki jezdniowe podnośnikowe z mechanicznym napędem podnoszenia, podesty ruchome
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'D')">C: dźwignice linotorowe, przenośniki kabinowe i krzesełkowe
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'D')">D: wszystkie odpowiedzi są poprawne
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>47.</strong> Instrukcja eksploatacji może nie zawierać
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'C')">A: informacji o terminach i zakresie przeglądów konserwacyjnych UTB
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'C')">B: podstawowych parametrów i przeznaczenia UTB
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'C')">C: terminów badan technicznych wykonywanych przez jednostkę inspekcyjna
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'C')">D: informacji o sposobie obsługi urządzenia
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>48.</strong> Księga rewizyjna urządzenia musi zawierać
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: zbiór protokołów z badan wykonywanych przez jednostkę inspekcyjna
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: dokument, w którym odnotowywane są przeglądy konserwacyjne
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: treść aktualnych aktów prawnych
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: wykaz uprawnionych operatorów
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>49.</strong> Decyzja wydana przez UDT
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'C')">A: nie podlega odwołaniu
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'C')">B: może zostać zmieniona przez inspektora PIP
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'C')">C: podlega możliwości odwołania się przez eksploatującego
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'C')">D: każda odpowiedz jest niepoprawna
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>50.</strong> Do egzaminu sprawdzającego kwalifikacje może przystąpić osoba, która
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'D')">A: złożyła wniosek o sprawdzenie kwalifikacji
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'D')">B: ukończyła 18 lat
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'D')">C: nie ma przeciwwskazań zdrowotnych do obsługi urządzeń technicznych
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'D')">D: wszystkie odpowiedzi są poprawne
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>51.</strong> Po zakończonym badaniu technicznym z wynikiem pozytywnym inspektor UDT
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'D')">A: przedłuża ważność świadectwa kwalifikacji operatora
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'D')">B: oznakowuje urządzenie naklejka, która jest zezwoleniem na użytkowanie urządzenia
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'D')">C: informuje użytkownika pisemnie w dzienniku konserwacji, ze wyraża zgodę na eksploatacje urządzenia
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'D')">D: sporządza protokół z wykonanych czynności i wydaje decyzje administracyjna zezwalająca na eksploatacje
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>52.</strong> Zaświadczenia kwalifikacyjne
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'C')">A: są ważne bezterminowo
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'C')">B: są terminowe z okresem ważności uzależnionym od ilości uzyskanych punktów na egzaminie
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'C')">C: są terminowe z okresem ważności zgodnym z zapisami rozporządzenia w sprawie trybu sprawdzenia kwalifikacji
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'C')">D: są ważne przez okres 15 lat
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>53.</strong> Dokonujący przeróbek urządzenia technicznego bez uzgodnienia z organem właściwej jednostki dozoru technicznego
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: podlega karze grzywny lub ograniczenia wolności
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: podlega ukaraniu mandatem karnym
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: nie podlega karze
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: wszystkie odpowiedzi są niepoprawne
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>54.</strong> Kto dopuszcza do eksploatacji urządzenie techniczne bez ważnej decyzji zezwalającej na eksploatację
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: podlega karze grzywny lub ograniczenia wolności
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: nie podlega karze, jeżeli nie dojdzie do wypadku
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: podlega wyłącznie karze grzywny
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: podlega karze więzienia
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>55.</strong> Instrukcja eksploatacji to
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: zbiór informacji niezbędnych do bezpiecznej eksploatacji urządzenia udostępniany przez producenta
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: zbiór zaleceń wydawanych przez Urząd Dozoru Technicznego
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: instrukcja, która musi stworzyć użytkownik urządzenia
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: wszystkie odpowiedzi są poprawne
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>56.</strong> Zaświadczeń kwalifikacyjnych do obsługi nie wymaga się
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'B')">A: jeżeli urządzenie jest obsługiwane przez jego właściciela
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'B')">B: jeżeli wszystkie mechanizmy urządzenia maja napęd ręczny
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'B')">C: jeśli urządzenie jest wykorzystywane do celów prywatnych, nie zarobkowych
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'B')">D: od osób po 60 roku życia
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>57.</strong> Osoba posiadająca Zaświadczenia kwalifikacyjne może obsługiwać
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: tylko urządzenia wymienione w zakresie uprawnienia
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: wszystkie urządzenia podlegające dozorowi technicznemu
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: inne urządzenia podlegające dozorowi technicznemu za zgoda pracodawcy
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: wszystkie UTB o udźwigu do 3,2 t
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>58.</strong> Obowiązkiem obsługującego urządzenie techniczne jest
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'D')">A: odmówić obsługi urządzenia, jeżeli wygasła decyzja zezwalająca na eksploatacje tego urządzenia
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'D')">B: zawsze stosować się do poleceń przełożonego nakazujących eksploatacje urządzenia
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'D')">C: stosować się do zapisów zawartych w instrukcji eksploatacji
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'D')">D: odpowiedz a i c jest prawidłowa
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>59.</strong> Zaświadczenie kwalifikacyjne do obsługi urządzeń technicznych są
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'B')">A: ważne na terenie Unii Europejskiej
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'B')">B: ważne z dowodem tożsamości
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'B')">C: bezterminowe</button>
+          <button onclick="checkAnswer(this, 'D', 'B')">D: wszystkie odpowiedzi są poprawne
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>60.</strong> Obsługujący który jest świadkiem wypadku ma obowiązek
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'D')">A: udzielić pomocy ofierze (lub ofiarom) wypadku
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'D')">B: zabezpieczyć miejsce zdarzenia
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'D')">C: powiadomić przełożonego
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'D')">D: wszystkie odpowiedzi są poprawne
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>61.</strong> Obsługującemu nie wolno
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: podnosić ładunków, których masy nie potrafi określić
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: kontrolować stanu technicznego urządzenia
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: stosować się do zapisów zawartych w instrukcji eksploatacji
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: dokonywać oględzin zewnętrznych urządzenia
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>62.</strong> Formami dozoru technicznego są
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: dozór pełny, dozór uproszczony, dozór ograniczony
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: badanie odbiorcze, badanie okresowe i badanie doraźne
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: UDT, TDT, WDT
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: wszystkie odpowiedzi są poprawne
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>63.</strong> Podnoszenie osób urządzeniami, które zostały zaprojektowane i wykonane wyłącznie do podnoszenia ładunków
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'C')">A: jest dopuszczalne, po zapewnieniu odpowiedniego poziomu bezpieczeństwa
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'C')">B: jest zabronione
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'C')">C: jest dopuszczalne, po uzgodnieniu z organem właściwej jednostki dozoru technicznego szczegółowych warunków eksploatacji
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'C')">D: jest dopuszczalne jednorazowo na pisemne polecenie przełożonego
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>64.</strong> Podnoszenie ładunków za pomocą dwóch lub więcej UTB
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: jest dopuszczalne, pod warunkiem opracowania przez eksploatującego szczegółowych warunków eksploatacji, opisujących czynności organizacyjno-techniczne minimalizujące ryzyko
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: jest zawsze dopuszczalne jeżeli masa ładunku nie przekracza sumy udźwigów wykorzystywanych urządzeń
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: jest dopuszczalne jeżeli masa ładunku nie przekracza połowy udźwigu każdego z wykorzystanych urządzeń
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: nie jest nigdy dopuszczalna
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>65.</strong> Przebywanie osób pod ładunkiem przenoszonym jest
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: zawsze niedozwolone
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: dozwolone dla osób kontrolującej spód ładunku;
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: dozwolone jeżeli współczynnik bezpieczeństwa cięgien wynosi nie mniej niż 5
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: dozwolone jeżeli współczynnik bezpieczeństwa cięgien wynosi nie mniej niż 7
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>66.</strong> Przenoszenia ładunków nad osobami jest
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'D')">A: dozwolone pod warunkiem uzyskania pisemnego zezwolenia od osoby kierującej transportem
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'D')">B: dozwolone, po zapewnieniu współczynników bezpieczeństwa dla cięgien i urządzeń chwytnych większych niż 10
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'D')">C: dozwolone pod warunkiem powiadomienia osób i wyposażeniu ich w środki ochrony indywidualnej
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'D')">D: wszystkie odpowiedzi są niepoprawne
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>67.</strong> Zaświadczenia kwalifikacyjne do obsługi urządzeń technicznych podlegających dozorowi technicznemu wydaje
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'B')">A: właściciel urządzenia
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'B')">B: UDT, TDT, WDT
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'B')">C: PIP
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'B')">D: wszystkie odpowiedzi są niepoprawne
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>68.</strong> Komisja egzaminacyjna powiadamia osobę zainteresowana o wyniku egzaminu
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'B')">A: w ciągu 7 dni po egzaminie w formie pisemnej
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'B')">B: bezpośrednio po egzaminie
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'B')">C: w ciągu 14 dni po egzaminie w formie elektronicznej
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'B')">D: listem poleconym lub poczta elektroniczna po upływie 30 dni roboczych od daty egzaminu
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>69.</strong> Dziennik konserwacji powinien być prowadzony
+        </p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'B')">A: tylko w formie papierowej
+          </button>
+          <button onclick="checkAnswer(this, 'B', 'B')">B: w formie elektronicznej lub papierowej
+          </button>
+          <button onclick="checkAnswer(this, 'C', 'B')">C: tylko w formie elektronicznej
+          </button>
+          <button onclick="checkAnswer(this, 'D', 'B')">D: przez obsługującego
+          </button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+
+
+  </div>
+  </body>
+  </html>

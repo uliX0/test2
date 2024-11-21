@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <div id="score-container">
+    <p>Odpowiedzi:</p>
+    <p><span id="correct-count" class="green circle">0</span> <span id="incorrect-count" class="red circle">0</span></p>
+  </div>
+
+  <h2>Podesty ruchome wiszące test</h2>
+
+  <div class="quiz-content">
+
+    <div class="question-box">
+      <div class="question">
+        <p><strong>Pytanie 1:</strong> pytanie(odpowiedź C)</p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'C')">A: asdasdasd asdasd</button>
+          <button onclick="checkAnswer(this, 'B', 'C')">B: asdasdsa asdas</button>
+          <button onclick="checkAnswer(this, 'C', 'C')">C: asdasd asdasd</button>
+          <button onclick="checkAnswer(this, 'D', 'C')">D: asdasd asdasd</button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+  
+    <div class="question-box">
+      <div class="question">
+        <p><strong>Pytanie 2:</strong> pytanie(odpowiedź A)</p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: asdasd</button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: asdasd</button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: asdasd asdasd</button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: asdasdasdd</button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+ 
+    <div class="question-box">
+      <div class="question">
+        <p><strong>Pytanie 3:</strong> pytanie(odpowiedź A)</p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'A')">A: asdsa</button>
+          <button onclick="checkAnswer(this, 'B', 'A')">B: asdasd</button>
+          <button onclick="checkAnswer(this, 'C', 'A')">C: asdasd</button>
+          <button onclick="checkAnswer(this, 'D', 'A')">D: Tlasdasdasden</button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+  
+    <div class="question-box">
+      <div class="question">
+        <p><strong>Pytanie 4:</strong> pytanie(odpowiedź C)</p>
+        <div class="answers">
+          <button onclick="checkAnswer(this, 'A', 'C')">A: asdasd</button>
+          <button onclick="checkAnswer(this, 'B', 'C')">B: asdasd</button>
+          <button onclick="checkAnswer(this, 'C', 'C')">C: sdsasdasdasdsadasdrszawa</button>
+          <button onclick="checkAnswer(this, 'D', 'C')">D: sdasdasdsadrocdfaw</button>
+        </div>
+        <p class="feedback" style="display: none;"></p>
+      </div>
+    </div>
+  </div>
+  </body>
+  </html>
